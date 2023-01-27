@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import "./index.css";
 
 function App() {
+  //Example
   return <></>;
 }
 
