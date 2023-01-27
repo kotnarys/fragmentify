@@ -3,7 +3,11 @@ import { render } from "react-dom";
 import "./index.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <h1>Дробилка</h1>
+    </>
+  );
 }
 
 render(<App />, document.querySelector("#root"));
