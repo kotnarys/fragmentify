@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Lalezar&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,4 +9,8 @@
   padding: 0;
   box-sizing: border-box;
   background-color: darkblue;
+}
+
+.startBtn {
+  @apply rounded-full bg-gradient-to-r from-start-blue  to-start-cyan h-16 w-72 text-start-text font-lalezar stroke-black text-4xl hover:opacity-75 transition-all active:translate-y-1;
 }
