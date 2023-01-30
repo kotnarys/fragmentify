@@ -1,0 +1,13 @@
+.home {
+  @apply w-screen h-screen;
+  .text {
+    @apply w-96 absolute top-1/2 mx-10;
+
+    .heading {
+      @apply font-head text-3xl text-center mb-5;
+    }
+    .paragraph {
+      @apply font-paragraph text-sm text-center;
+    }
+  }
+}

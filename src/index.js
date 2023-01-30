@@ -1,10 +1,14 @@
 import React from "react";
-import { render } from "react-dom";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
+import Home from "./pages/Home";
 
-function App() {
-  //Example
-  return <></>;
-}
-
-render(<App />, document.querySelector("#root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <BrowserRouter>
+    <Routes>
+      <Route index element={<Home />} />
+    </Routes>
+  </BrowserRouter>
+);
