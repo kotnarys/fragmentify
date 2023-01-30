@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
         "start-blue": "#4C49D9",
         "start-cyan": "#3D3BAC",
-        "start-text": "#F8F8F8",
+        "color-text": "#F8F8F8",
+        violets: "#8C3F9F",
+        reds: "#AD3838",
+        grens: "#4D9F3F",
       },
       fontFamily: {
         lalezar: ["Lalezar"],
