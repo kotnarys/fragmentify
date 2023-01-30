@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         lalezar: ["Lalezar"],
+        Kumbh: ["Kumbh Sans"],
       },
     },
   },
