@@ -10,6 +10,7 @@ module.exports = {
         violets: "#8C3F9F",
         reds: "#AD3838",
         grens: "#4D9F3F",
+        grays: "#393939",
       },
       fontFamily: {
         lalezar: ["Lalezar"],
