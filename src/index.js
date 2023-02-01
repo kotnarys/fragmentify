@@ -2,22 +2,29 @@ import React from "react";
 import { render } from "react-dom";
 import "./index.css";
 import StartButton from "./components/StartButton.js";
-import Buttons from "./components/Buttons";
+import NavButton from "./components/NavButton";
+import SellButton from "./components/SellButton";
+import NFTButtons from "./components/NFTButtons";
+import BuyButton from "./components/BuyButton";
 
 function App() {
   return (
     <>
       <StartButton />
-      <Buttons>SPLIT</Buttons>
-      <Buttons>PURCHASE</Buttons>
-      <Buttons>RESERVE</Buttons>
-      <Buttons>PRIMARY</Buttons>
-      <Buttons>MARKETPLACE</Buttons>
-      <Buttons>SELL</Buttons>
-      <Buttons>CANCEL SELL</Buttons>
-      <Buttons>BUY</Buttons>
-      <Buttons>JOIN</Buttons>
-      <Buttons>APPLY</Buttons>
+
+      <NavButton>PRIMARY</NavButton>
+      <NavButton>MARKETPLACE</NavButton>
+
+      <SellButton>CANCEL SELL</SellButton>
+      <SellButton>SELL</SellButton>
+
+      <NFTButtons>SPLIT</NFTButtons>
+      <NFTButtons>JOIN</NFTButtons>
+      <NFTButtons>APPLY</NFTButtons>
+
+      <BuyButton>PURCHASE</BuyButton>
+      <BuyButton>RESERVE</BuyButton>
+      <BuyButton>BUY</BuyButton>
     </>
   );
 }
