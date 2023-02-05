@@ -1,11 +1,8 @@
 import React from "react";
 import Button from "../components/Button";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import ImageSlider from "../components/ImageSlider/ImageSlider";
-import { productImages } from "../assets";
+
 import s from "./s.module.scss";
+import ImageSlider from "../components/ImageSlider/ImageSlider";
 
 export default function Home() {
   return (
@@ -24,8 +21,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={s.slider}>
-        <ImageSlider images={productImages} />
+      <div className={s.swiperContainer}>
+        <ImageSlider />
       </div>
     </div>
   );
