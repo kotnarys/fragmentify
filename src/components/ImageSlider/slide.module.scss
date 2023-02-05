@@ -1,0 +1,14 @@
+a {
+  text-decoration: none;
+  color: unset;
+}
+.product_image_slider {
+  SwiperSlide {
+    @apply block;
+    Link {
+      img {
+        @apply absolute left-0 top-0 w-auto rounded-3xl;
+      }
+    }
+  }
+}
