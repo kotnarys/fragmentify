@@ -561,6 +561,21 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.bg-violets{
+  --tw-bg-opacity: 1;
+  background-color: rgb(140 63 159 / var(--tw-bg-opacity));
+}
+
+.bg-reds{
+  --tw-bg-opacity: 1;
+  background-color: rgb(173 56 56 / var(--tw-bg-opacity));
+}
+
+.bg-grens{
+  --tw-bg-opacity: 1;
+  background-color: rgb(77 159 63 / var(--tw-bg-opacity));
+}
+
 .startBtn{
   height: 4rem;
   width: 18rem;
@@ -587,6 +602,25 @@ video {
 
 .startBtn:active{
   --tw-translate-y: 0.25rem;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.btns{
+  height: 2rem;
+  width: 9rem;
+  border-radius: 9999px;
+  font-family: Lalezar;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btns:hover{
+  opacity: 0.8;
+}
+
+.btns:active{
+  --tw-translate-y: 0.125rem;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }

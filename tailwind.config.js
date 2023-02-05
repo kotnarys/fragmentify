@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -11,6 +11,12 @@ module.exports = {
       },
       backgroundImage: {
         home: "url(../../public/HomePage.jpg)",
+        "color-text": "#F8F8F8",
+        violets: "#8C3F9F",
+        reds: "#AD3838",
+        grens: "#4D9F3F",
+        grays: "#393939",
+        whites: "#ECECEC",
       },
       fontFamily: {
         lalezar: ["Lalezar"],
