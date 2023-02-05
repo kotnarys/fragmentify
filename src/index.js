@@ -1,14 +1,27 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { render } from "react-dom";
 import "./index.css";
-import Home from "./pages/Home";
+import StartButton from "./components/StartButton.js";
+import Buttons from "./components/Buttons";
+import Profile from "./components/Profile";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route index element={<Home />} />
-    </Routes>
-  </BrowserRouter>
-);
+function App() {
+  return (
+    <>
+      {/* <StartButton />
+      <Buttons>SPLIT</Buttons>
+      <Buttons>PURCHASE</Buttons>
+      <Buttons>RESERVE</Buttons>
+      <Buttons>PRIMARY</Buttons>
+      <Buttons>MARKETPLACE</Buttons>
+      <Buttons>SELL</Buttons>
+      <Buttons>CANCEL SELL</Buttons>
+      <Buttons>BUY</Buttons>
+      <Buttons>JOIN</Buttons>
+      <Buttons>APPLY</Buttons> */}
+      <Profile />
+    </>
+  );
+}
+
+render(<App />, document.querySelector("#root"));
