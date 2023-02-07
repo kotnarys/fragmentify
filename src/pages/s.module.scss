@@ -1,11 +1,11 @@
 .startPage {
-  @apply grid w-screen h-screen;
+  @apply w-screen h-screen;
 
   .home {
     @apply flex w-screen h-screen bg-home bg-cover bg-center bg-no-repeat;
 
     .home__content {
-      @apply flex flex-col absolute items-center top-1/3 mx-10;
+      @apply flex flex-col absolute items-center top-1/3 mx-40;
       .text {
         @apply w-96;
         .heading {
@@ -21,6 +21,6 @@
     }
   }
   .swiperContainer {
-    @apply absolute w-[700px] top-1/4 left-[540px] rotate-[30deg];
+    @apply w-[500px] h-full;
   }
 }
