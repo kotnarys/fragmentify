@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
+import Pattern from "../components/Pattern.js";
 
 import s from "./s.module.scss";
 import ImageSlider from "../components/ImageSlider/ImageSlider";
@@ -24,6 +25,7 @@ export default function Home() {
       <div className={s.swiperContainer}>
         <ImageSlider />
       </div>
+      <Pattern />
     </div>
   );
 }
