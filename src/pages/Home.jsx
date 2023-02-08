@@ -12,8 +12,8 @@ export default function Home() {
           <div className={s.text}>
             <h1 className={s.heading}>Fragmented NFTs</h1>
             <p className={s.paragraph}>
-              gallery of already fragmented NFTs that you can purchase on our
-              markerplace
+              You can divide your NFT into several pieces or buy someone else's
+              part of the NFT
             </p>
           </div>
           <div className={s.btn}>

@@ -5,9 +5,10 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import s from "./slider.module.scss";
 import { EffectCoverflow, Pagination } from "swiper";
-import ImageOne from "../../assets/images/NFT_1.jpg";
+
 import ImageTwo from "../../assets/images/NFT_2.jpg";
-import ImageThree from "../../assets/images/NFT_3.png";
+import ImageThree from "../../assets/images/NFT_3.jpg";
+import ImageFour from "../../assets/images/NFT_4.jpg";
 
 export default function ImageSlider() {
   return (
@@ -22,7 +23,7 @@ export default function ImageSlider() {
       }}
       modules={[EffectCoverflow, Pagination]}
       slidesPerView={3}
-      spaceBetween={10}
+      spaceBetween={0}
       parallax={true}
       // Дефолтная галерея
       // slidesPerView={3}
@@ -35,11 +36,6 @@ export default function ImageSlider() {
     >
       <SwiperSlide>
         <div className={s.box}>
-          <img src={ImageOne} alt="img1" />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={s.box}>
           <img src={ImageTwo} alt="img2" />
         </div>
       </SwiperSlide>
@@ -50,7 +46,12 @@ export default function ImageSlider() {
       </SwiperSlide>
       <SwiperSlide>
         <div className={s.box}>
-          <img src={ImageOne} alt="img1" />
+          <img src={ImageFour} alt="img4" />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={s.box}>
+          <img src={ImageTwo} alt="img2" />
         </div>
       </SwiperSlide>
     </Swiper>
