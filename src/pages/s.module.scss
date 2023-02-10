@@ -1,26 +1,76 @@
 .startPage {
-  @apply w-screen h-screen;
-
-  .home {
-    @apply flex w-screen h-screen bg-home bg-cover bg-center bg-no-repeat;
-
-    .home__content {
-      @apply flex flex-col absolute items-center top-1/3 mx-40;
-      .text {
-        @apply w-96;
-        .heading {
-          @apply font-lalezar text-[48px] text-center mb-3 text-white;
-        }
-        .paragraph {
-          @apply font-Kumbh text-[20px] text-center text-start-paragraph;
+  @apply flex items-center max-h-screen  w-screen h-screen bg-home bg-cover bg-center bg-no-repeat;
+  @media screen and (width<1280px) {
+    @apply flex-col items-center;
+  }
+  .home__content {
+    @apply flex flex-col items-center mx-10;
+    .text {
+      @apply w-96;
+      @media screen and (width<401px) {
+        @apply w-72;
+      }
+      @media screen and (width<345px) {
+        @apply w-48;
+      }
+      .heading {
+        @apply font-lalezar text-[48px] text-center mb-3 text-white;
+        @media screen and (width<401px) {
+          @apply text-[32px];
         }
       }
-      .btn {
-        @apply m-12;
+      .paragraph {
+        @apply font-Kumbh text-[20px] text-center text-start-paragraph;
+        @media screen and (width<401px) {
+          @apply text-[15px];
+        }
+      }
+    }
+    .btn {
+      @apply m-12;
+      @media screen and (width<401px) {
+        @apply m-5;
       }
     }
   }
-  .swiperContainer {
-    @apply w-[500px] h-full;
+  .carousel {
+    @apply w-[900px]  rotate-[20deg];
+    @media screen and (width < 1500px) {
+      @apply w-[700px];
+    }
+    @media screen and (width<1280px) {
+      @apply rotate-0 w-[200px];
+    }
+  }
+  .footer {
+    @apply absolute bottom-0 w-screen text-white bg-footer-color flex justify-between px-10 py-5;
+    @media screen and (width<1200px) {
+      @apply justify-center;
+    }
+
+    .devs {
+      @apply flex justify-center;
+      @media screen and (width<1200px) {
+        @apply hidden;
+      }
+      img {
+        @apply w-fit h-fit;
+      }
+
+      .marquee_container {
+        overflow: hidden;
+        .marquee {
+          animation: marquee 10s infinite linear;
+        }
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+    }
   }
 }

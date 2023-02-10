@@ -1,15 +1,25 @@
 .container {
-  @apply absolute w-[800px] top-[150px] left-[650px] rotate-[20deg];
+  @apply shadow-none h-[450px];
   .box {
     position: relative;
     overflow: hidden;
     width: 250px;
     height: 450px;
+    @media screen and (width < 1501px) {
+      width: 200px;
+      height: 350px;
+    }
+
     img {
       position: absolute;
       width: 250px;
       height: 450px;
       object-fit: cover;
+      border-radius: 30px;
+      @media screen and (width < 1501px) {
+        width: 200px;
+        height: 350px;
+      }
     }
   }
 }

@@ -14,6 +14,7 @@ module.exports = {
         grens: "#4D9F3F",
         grays: "#393939",
         whites: "#ECECEC",
+        "footer-color": "#1A1A1C",
       },
       backgroundImage: {
         home: "url(../../public/HomePage.jpg)",
