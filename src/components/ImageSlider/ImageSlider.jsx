@@ -9,7 +9,8 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
 import ImageOne from "../../assets/images/NFT_1.jpg";
 import ImageTwo from "../../assets/images/NFT_2.jpg";
-import ImageThree from "../../assets/images/NFT_3.png";
+import ImageThree from "../../assets/images/NFT_3.jpg";
+import ImageFour from "../../assets/images/NFT_4.jpg";
 
 export default function ImageSlider() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -50,11 +51,6 @@ export default function ImageSlider() {
     >
       <SwiperSlide>
         <div className={s.box}>
-          <img src={ImageOne} alt="img1" />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={s.box}>
           <img src={ImageTwo} alt="img2" />
         </div>
       </SwiperSlide>
@@ -65,7 +61,12 @@ export default function ImageSlider() {
       </SwiperSlide>
       <SwiperSlide>
         <div className={s.box}>
-          <img src={ImageOne} alt="img1" />
+          <img src={ImageFour} alt="img4" />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={s.box}>
+          <img src={ImageTwo} alt="img2" />
         </div>
       </SwiperSlide>
     </Swiper>
