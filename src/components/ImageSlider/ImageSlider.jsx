@@ -7,7 +7,6 @@ import s from "./slider.module.scss";
 import { EffectCoverflow, Pagination } from "swiper";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
-import ImageOne from "../../assets/images/NFT_1.jpg";
 import ImageTwo from "../../assets/images/NFT_2.jpg";
 import ImageThree from "../../assets/images/NFT_3.jpg";
 import ImageFour from "../../assets/images/NFT_4.jpg";
@@ -51,7 +50,7 @@ export default function ImageSlider() {
     >
       <SwiperSlide>
         <div className={s.box}>
-          <img src={ImageTwo} alt="img2" />
+          <img src={ImageTwo} alt="img1" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
